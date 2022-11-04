@@ -19,3 +19,15 @@ function fizzBuzz(n) {
 }
 
 fizzBuzz(15);
+
+function findMedian(arr) {
+  arr.sort((a, b) => {
+    return a - b;
+  });
+  const median = Math.round(arr.length / 2) - 1;
+  return arr[median];
+}
+
+const array = [0, 1, 2, 4, 6, 5, 3];
+
+console.log(findMedian(array));
